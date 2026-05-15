@@ -2,13 +2,13 @@
 
 import streamlit as st
 
-from utils.auth import require_password
+from utils.auth import require_google_auth
 
 st.set_page_config(
     page_title="Girt Design | Coming Soon", page_icon="🧱", layout="wide"
 )
 
-require_password()
+require_google_auth()
 
 st.markdown(
     """

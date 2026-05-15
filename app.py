@@ -10,7 +10,7 @@ Pages:
 
 import streamlit as st
 
-from utils.auth import require_password
+from utils.auth import require_google_auth
 
 st.set_page_config(
     page_title="IS Steel Design Suite",
@@ -19,7 +19,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-require_password()
+require_google_auth()
 
 # ── Custom CSS ─────────────────────────────────────────────────────────────
 st.markdown(
