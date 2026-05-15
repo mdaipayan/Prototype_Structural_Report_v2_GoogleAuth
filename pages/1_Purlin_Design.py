@@ -20,14 +20,14 @@ from utils.sections import (
     ISMC,
 )
 from utils.purlin_calc import run_purlin_design
-from utils.auth import require_password
+from utils.auth import require_google_auth
 from utils.pdf_report import generate_purlin_pdf
 
 st.set_page_config(
     page_title="Purlin Design | IS 800:2007", page_icon="📐", layout="wide"
 )
 
-require_password()
+require_google_auth()
 
 st.markdown(
     """
